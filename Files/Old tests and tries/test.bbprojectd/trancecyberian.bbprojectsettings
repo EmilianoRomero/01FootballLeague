@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EmbeddedEditorHidden:trancecyberian</key>
+	<false/>
+	<key>ExpandedEditorWidth:trancecyberian:displays([(0, 0), (1280, 800)])</key>
+	<integer>1008</integer>
+	<key>ExpandedItems:trancecyberian</key>
+	<array/>
+	<key>FileFilterMode:trancecyberian</key>
+	<integer>0</integer>
+	<key>OpenDocuments:trancecyberian</key>
+	<array>
+		<dict>
+			<key>BookmarkData</key>
+			<data>
+			Ym9vazgDAAAAAAQQMAAAACyCD3hpwk5Qbrj/UYJhLKz4M9aX9ABG
+			Qo6GGQ+Z+oDrKAIAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
+			AAAOAAAAAQEAAHRyYW5jZWN5YmVyaWFuAAAHAAAAAQEAAERlc2t0
+			b3AAGwAAAAEBAABQUk9KRUNUIDEgLSBGb290YmFsbCBMZWFndWUA
+			CQAAAAEBAABOWVNMLmh0bWwAAAAUAAAAAQYAABAAAAAgAAAAOAAA
+			AEgAAABsAAAACAAAAAQDAABcmAIAAAAAAAgAAAAEAwAAgJwJAAAA
+			AAAIAAAABAMAABLBmQACAAAACAAAAAQDAAC2ODcCAgAAAAgAAAAE
+			AwAASHU3AgIAAAAUAAAAAQYAAJwAAACsAAAAvAAAAMwAAADcAAAA
+			CAAAAAAEAABBwVf4KAtBDhgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+			AAAAAAAAAAAACAAAAAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgA
+			AAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAE
+			AwAAALBgbnQAAAAIAAAAAAQAAEG7cf+yAAAAJAAAAAEBAABDNUMw
+			QjZDRC1BQTA0LTM5NzQtQUMwMi1BOTI3QkJGRTkzQTkYAAAAAQIA
+			AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+			AAABBQAAGgAAAAEBAABOU1VSTERvY3VtZW50SWRlbnRpZmllcktl
+			eQAABAAAAAMDAADmKgAA2AAAAP7///8BAAAAAAAAABEAAAAEEAAA
+			gAAAAAAAAAAFEAAA7AAAAAAAAAAQEAAAGAEAAAAAAABAEAAACAEA
+			AAAAAAACIAAA5AEAAAAAAAAFIAAAVAEAAAAAAAAQIAAAZAEAAAAA
+			AAARIAAAmAEAAAAAAAASIAAAeAEAAAAAAAATIAAAiAEAAAAAAAAg
+			IAAAxAEAAAAAAAAwIAAA8AEAAAAAAAABwAAAOAEAAAAAAAARwAAA
+			IAAAAAAAAAASwAAASAEAAAAAAAAQ0AAABAAAAAAAAAD4AQCAHAIA
+			AAAAAAA=
+			</data>
+			<key>FileURL</key>
+			<string>file:///Users/trancecyberian/Desktop/PROJECT%201%20-%20Football%20League/NYSL.html</string>
+			<key>HasSecurityScope</key>
+			<true/>
+			<key>RelativePath</key>
+			<string>./NYSL.html</string>
+			<key>TypeID</key>
+			<string>_CFileLocator</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>OpenDocumentsExpanded</key>
+	<true/>
+	<key>OpenDocumentsSplitterProportion</key>
+	<real>-0.0019841269841269771</real>
+	<key>ProjectItemsExpanded</key>
+	<true/>
+	<key>ProjectViewVisible</key>
+	<false/>
+	<key>RecentItems:trancecyberian</key>
+	<array/>
+	<key>ScratchpadItemsExpanded</key>
+	<true/>
+	<key>ScratchpadItemsVisible</key>
+	<true/>
+	<key>ShowSCMData:trancecyberian</key>
+	<false/>
+	<key>ToolbarVisible:trancecyberian</key>
+	<false/>
+	<key>ViewSplitterPosition:trancecyberian</key>
+	<real>0.1498015820980072</real>
+	<key>WindowFrame:trancecyberian:displays([(0, 0), (1280, 800)])</key>
+	<string>rect(45,3,800,1011)</string>
+</dict>
+</plist>

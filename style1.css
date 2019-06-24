@@ -1,0 +1,714 @@
+/*
+CSS for NYSL site
+Name: style1
+*/
+
+body {
+  background-color: #f1f1f1;
+  font-family: "Impact", Charcoal, sans-serif;
+}
+
+.name {
+  position: relative;
+  border: 10px solid #064d3f;
+  background: url(style1cut.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 44px;
+  font-size: 48px;
+  color: white;
+  text-shadow: 5px 4px black;
+  text-align: center;
+  word-spacing: 5px;
+}
+
+.logo {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  margin-left: 960px;
+  padding-top: 480px;
+}
+
+.unterbanner1,
+.unterbanner2,
+.unterbanner3 {
+  position: inherit;
+  padding-bottom: 15px;
+  background-color: #064d3f;
+  border: 15px #064D3f;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  text-shadow: 4px 3px black;
+  word-spacing: 5px;
+}
+
+
+.navigation {
+  /*position: absolute;*/
+  margin-top: 73px;
+  float: left;
+  margin-left: 0;
+  padding-left: 0;
+  height: auto;
+  border: 5px #064D3f;
+  /*por qué no lo marca?*/
+  background-color: #064d3f;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*.li*/
+.nav {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #064d3f;
+  color: #064d3f;
+}
+
+/*li a*/
+#nav {
+  font-size: 24px;
+  display: -webkit-box;
+  color: #f1f1f1;
+  text-shadow: 2px 1px black;
+  text-align: left;
+  padding: 14px 16px;
+}
+
+/*.li*/
+.nav:hover {
+  background-color: white;
+}
+
+.active {
+  background-color: #9cff53;
+}
+
+.content {
+  position: relative;
+  margin-top: 140px;
+  margin-left: 320px;
+  margin-right: 75px;
+  text-align: justify;
+
+  word-spacing: 4.5px;
+}
+
+.subtitle {
+  position: relative;
+  color: #064d3f;
+  text-shadow: 3px 2px #9cff53;
+  font-size: 46px;
+}
+
+p {
+  position: relative;
+  text-align: justify;
+  font-size: 30px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+
+}
+
+em {
+  font-style: normal;
+  color: #03457e;
+}
+
+/*
+-------------- PAGE RULES --------------
+
+CONTENTTITLE h1
+
+SECTIONTITLE h2
+- Subsection 
+1. Listnum h3, p
++. Listsquare h3, p
+    1.Sublistnum a
+    1. Sublist p
+
+*/
+
+.rules {
+  margin-top: 100px;
+  margin-left: 75px;
+  margin-right: 25px;
+}
+
+.contenttitle {
+  text-align: center;
+}
+
+.listnum .sublistnum .alistnum {
+  /*ordered list part of a subsection -h3-*/
+  /*ordered numerical sublist part of a list within a (sub)section -a-*/
+  /*a within a (sub)list*/
+  list-style: decimal;
+}
+
+.listsquare {
+  /*unordered-square list part of a subsection -h3-* or simply a paragraph -p-*/
+  list-style: square;
+}
+
+.listscircle {
+  /*unordered-circle list part of a subsection -h3-* or simply a paragraph -p-*/
+  list-style: circle;
+}
+
+.plistring:before {
+  content: ' \25CB';
+}
+
+.sublistring {
+  list-style-type: none;
+}
+
+.plistring {
+  margin-left: 75px;
+}
+
+.sublistalfa {
+  list-style: lower-latin;
+}
+
+.plist {
+  /*paragraph within a (sub)list*/
+  list-style: decimal;
+}
+
+.mainsection {
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 35px;
+  padding-right: 50px;
+}
+
+.h3 {
+  margin-left: 50px;
+}
+
+.plist .alist {
+  margin-left: 25px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.contenttitle {
+  /*the whole section's title -h1, h3-*/
+}
+
+.sectiontitle {
+  /*every single main section -h2-*/
+}
+
+.subsection {
+  /*the section containing every single subsection -h3, plist-*/
+}
+
+.itabold {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.itaunder {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/*
+-------------- PAGE gameinfo --------------
+*/
+
+.gameinfo,
+.maps {
+  font-family: "Arial MT", sans-serif;
+  margin-top: 100px;
+}
+
+.itabold,
+.itaunder {
+  text-align: left;
+  margin-left: 300px;
+}
+
+.titlegameinfo {
+  text-align: center;
+}
+
+.mes,
+.location,
+.contact,
+.questions,
+.addinfo {
+  /*propiedades de toda la tabla*/
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 300px;
+}
+
+.mes td,
+.mes th,
+.location td,
+.location th,
+.contact,
+.questions,
+.addinfo {
+  /*propiedades generales de las celdas y del encabezado*/
+  /*no borders!*/
+  padding: 8px;
+  /*text align as shown!*/
+  text-align: left;
+  vertical-align: middle;
+}
+
+.mes tr,
+.location tr,
+#regform:nth-last-child(n) {
+  /*hasta el n-simo del color indicado*/
+  background-color: #f1f1f1;
+}
+
+#headermes,
+#headermes1,
+#headerloc,
+#headerformfield,
+#headerfieldvalue {
+  /*Gemeinsame Merkmale des Headers*/
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  text-shadow: 2px 1px black;
+  background-color: #064D3F;
+}
+
+#dates {
+  /*Eigene Merkmale des Datums*/
+  /*text align as shown!*/
+  text-align: center;
+}
+
+#headermes {
+  /*Eigene Merkmale des Headers*/
+  /*text align as shown!*/
+  text-align: center;
+}
+
+#headermes1 {
+  /*Eigene Merkmale des Headers*/
+  /*text align as shown!*/
+  text-align: left;
+}
+
+#headerloc {
+  /*Eigene Merkmale des Headers*/
+  /*text align as shown!*/
+  text-align: left;
+}
+
+#leftnormal,
+#leftnormal1 {
+  /*Eigene Merkmale des Headers*/
+  /*text align as shown!*/
+  text-align: left;
+  font-weight: normal;
+  padding-left: 5px;
+}
+
+#justinormal {
+  /*Eigene Merkmale des Headers*/
+  /*text align as shown!*/
+  text-align: justify;
+  font-weight: normal;
+}
+
+#leftnormal1 {
+  /*Eigene Merkmale des Headers*/
+  /*text align as shown!*/
+  text-align: left;
+  font-weight: normal;
+  padding-left: 5px;
+}
+
+#rightnormal {
+  /*Eigene Merkmale des Headers*/
+  /*text align as shown!*/
+  text-align: right;
+  font-weight: normal;
+}
+
+#rightbold {
+  /*Eigene Merkmale des Headers*/
+  /*text align as shown!*/
+  text-align: right;
+  font-weight: bold;
+  padding-left: 175px;
+}
+
+#leftbold {
+  /*Eigene Merkmale des Headers*/
+  /*text align as shown!*/
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact,
+#addinfo1,
+#addinfo2 {
+  height: 60px;
+}
+
+#email,
+  {
+  padding-left: 150px;
+}
+
+/*GAME INFO-----maps-----*/
+/*
+  ========================================
+  MAPAS
+  ========================================
+*/
+
+.ajkatzenmap {
+  margin-bottom: 66px;
+}
+
+.gbaymap {
+  margin-bottom: 22px;
+}
+
+.howardmap {
+  margin-bottom: 66px;
+}
+
+.marjmap {
+  margin-bottom: 22px;
+}
+
+.northmap {
+  margin-bottom: 66px;
+}
+
+.southmap {
+  margin-bottom: 22px;
+}
+
+.map {
+  height: 264px;
+  position: relative;
+}
+
+.maps {
+  margin-left: 290px;
+}
+
+.col {
+  position: relative;
+}
+
+
+/*---end section tables and info---*/
+
+/*--section registration--*/
+.reg {
+  margin-left: 300px;
+  margin-right: 300px;
+  display: grid;
+  grid-template-rows: 25% 3% 2% 2% 3% 10% 3% 10% 2.5% 2.5% 12.5% 15% 5%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+#regtitle {
+  text-align: center;
+}
+
+.fixedwidth {
+  display: block;
+  width: 100px;
+  height: auto;
+  float: left;
+}
+
+#regmaindata,
+#schools,
+#positions,
+#permreg,
+  {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+#regmaindata {
+  /*25%*/
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/*--FLEXBOX a regmain data--*/
+#namesreg,
+#cityzip,
+#persinforeg,
+#contact {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#sctitle {
+  /*2.5%*/
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+}
+
+#schools {
+  /*2.5%*/
+  grid-row-start: 3;
+  grid-row-end: 5;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#school1,
+#school2 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#school1,
+#cs1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#school2,
+#cs2 {
+  grid-column-start: 2;
+}
+
+#cs1,
+#cs2 {
+  /*2.5%*/
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#positions {
+  display: grid;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+#postitle1 {
+  /*2.5%*/
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+#postitle2 {
+  /*2.5%*/
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+#positions1 {
+  /*7.5%*/
+  grid-row-start: 6;
+  grid-row-end: 7;
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+}
+
+#positions2 {
+  /*7.5%*/
+  grid-row-start: 8;
+  grid-row-end: 9;
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+}
+
+#posleft {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#posright {
+  display: grid;
+  grid-column-start: 2;
+}
+
+#uniform {
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+#jssz {
+  grid-row-start: 10;
+  grid-row-end: 11;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#clothing {
+  grid-row-start: 11;
+  grid-row-end: 12;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#jerseysize {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#shortssize,
+shorts {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#jersey,
+#shorts {
+  grid-row-start: 11;
+  grid-row-end: 12;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#sizeleft {
+  display: grid;
+  grid-row-start: 11;
+  grid-row-end: 12;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#sizeright {
+  display: grid;
+  grid-row-start: 11;
+  grid-row-end: 12;
+  grid-column-start: 2;
+  align-content: flex-start;
+}
+
+#permreg {
+  grid-row-start: 12;
+  grid-row-end: 13;
+}
+
+#sendreg {
+  grid-row-start: 13;
+  grid-row-end: 14;
+}
+
+#sctitle,
+#closestsch,
+#postitle,
+#uniform,
+#jerseysize,
+#shortssize,
+#jssz,
+#titperm {
+  font-weight: bold;
+}
+
+#closestsch,
+#pos,
+#sz,
+#schools {
+  font-size: 90%;
+}
+
+#titperm,
+#textperm,
+#sign {
+  font-size: 75%;
+}
+
+/*#jersey,
+#shorts {
+  display: flex;
+  flex-direction: row;
+}
+
+#sizeright,
+#sizeleft {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}*/
+
+/*--
+#regmaindata,
+#schools,
+#position,
+#uniform,
+#clothing,
+#permreg,
+#jersey,
+#shorts {
+  margin-bottom: 25px;
+}
+--*/
+
+/*--
+#position {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+--*/
+
+
+/*-- Table Registration --*/
+
+#headerregform {
+  background-color: #064D3f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  margin: 15px;
+  text-align: center;
+  padding-left: 50px;
+  color: white;
+  font-size: 32px;
+  text-shadow: 4px 3px black;
+  word-spacing: 5px;
+}
+
+#navigationform {
+  list-style-type: none;
+  margin: 15px;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  color: #064D3f;
+  text-shadow: 1px 0 white;
+  text-align: center;
+  padding: 10px 14px;
+}
+
+#navigationform:before {
+  content: ' \21E6';
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 1px #9cff53;
+}
+
+/*--

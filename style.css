@@ -1,0 +1,87 @@
+/*
+CSS for NYSL site
+Name: style0
+*/
+
+body {
+  /* The image used */
+  background-image: url("footballfield.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Impact", Charcoal, sans-serif;
+}
+
+.title {
+  border: 10px solid #064d3f;
+  padding: 25px;
+}
+
+.logo {
+  position: absolute;
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+
+h1 {
+  font-size: 96px;
+  color: #064D3F;
+  margin-left: 350px;
+  text-decoration: underline;
+  text-shadow: 3px 2px #93ff36;
+}
+
+.unterbanner {
+  margin-top: 10px;
+  background-color: #064d3f;
+  width: inherit;
+  border: 15px #064D3f;
+  padding: 17px;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  text-shadow: 4px 3px black;
+  word-spacing: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container .box {
+  color: black;
+  font-size: 25px;
+  margin-top: 180px;
+  margin-right: 60px;
+}
+
+p {
+  text-indent: 50px;
+  line-height: 1.5;
+  word-spacing: 4.5px;
+  text-align: left;
+}
+
+.subtitle {
+  color: #064d3f;
+  text-shadow: 3px 2px #93ff36;
+  font-size: 42px;
+  text-align: justify;
+}
+
+.kid,
+.girls,
+.boys {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
