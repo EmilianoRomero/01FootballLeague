@@ -40,54 +40,45 @@
     <form action="show_data.html" method="get">
         <!--Comienzo Sección REG-->
         <section class="reg">
-            <div id="regmaindata">
-                <div id="namesreg">
-                    <a id="1stname">
-                        <!--*<label for="1stname" class="fixedwidth">First Name:</label>-->
-                        First Name:
-                        <input type="text" name="first_name" value="user_input">
-                    </a>
-                    <a id="lastname">
-                        <!--*<label for="lastname" class="fixedwidth">Last Name:</label>-->
-                        Last Name:
-                        <input type="text" name="last_name" value="user_input">
-                    </a>
+            <div class="regmaindata">
+                <div class="doublecolreg">
+                    <div class="regleft">
+                        <label for="fname" class="fixedwidth">First Name:</label>
+                        <input type="text" name="first_name" value="enter first name" size="35" id="fname">
+                        <!--VALUE could be empty-->
+                    </div>
+                    <div class="regright">
+                        <label for="lastname" class="fixedwidth">Last Name:</label>
+                        <input type="text" name="last_name" value="enter last name" size="35" id="lastname">
+                    </div>
                 </div>
-                <div id="addressst">
-                    <a id="street">
-                        <!--*<label for="staddress" class="fixedwidth">Street Address:</label>-->
-                        Street Address:
-                        <input type="text" name="street_address" value="user_input">
-                    </a>
+                <div class="str">
+                    <label for="str" class="fixedwidth">Street Address:</label>
+                    <input type="text" name="street_address" value="enter street" size="110" id="str">
                 </div>
-                <div id="cityzip">
-                    <a id="city">
-                        <!--*<label for="city" class="fixedwidth">City:</label>-->
-                        City:
-                        <input type="text" name="city" value="user_input">
-                    </a>
-                    <a id="zipcode">
-                        <!--*<label for="zipcode" class="fixedwidth">Zip Code:</label>-->
-                        Zip Code:
-                        <input type="text" name="zip_code" value="user_input">
-                    </a>
+                <div class="doublecolreg">
+                    <div class="regleft">
+                        <label for="city" class="fixedwidth">City:</label>
+                        <input type="text" name="city" value="enter city" size="35" id="city">
+                    </div>
+                    <div class="regright">
+                        <label for="zipcode" class="fixedwidth">Zip Code:</label>
+                        <input type="text" name="zip_code" value="zipcode" maxlength="6" size="35" id="zipcode">
+                    </div>
                 </div>
-                <div id="persinforeg">
-                    <a id="birth">
-                        <!--*<label for="birthdate" class="fixedwidth">Birth Date (mm/dd/yyyy):</label>-->
-                        Birth Date (mm/dd/yyyy):
-                        <input type="text" name="birth_date" value="user_input">
-                    </a>
-                    <div id="gen">
-                        <a id="gender">Gender:</a>
-                        <!--*<label for="gender" class="fixedwidth">Gender:</label>-->
-                        <a id="m"><input type="radio" name="gender" value="male"> Male</a>
-                        <a id="f"><input type="radio" name="gender" value="female"> Female</a>
+                <div class="doublecolreg">
+                    <div class="regleft">
+                        <label for="birthdate" class="fixedwidth">Birth Date:</label>
+                        <input type="text" name="birth_date" value="mm/dd/yyyy" size="10" id="birthdate">
+                    </div>
+                    <div class="regright">
+                        <label for="gender" class="fixedwidth">Gender:</label>
+                        <a id="m"><input type="radio" name="gender" value="male" id="gender"> Male</a>
+                        <a id="f"><input type="radio" name="gender" value="female" id="gender"> Female</a>
                     </div>
                 </div>
 
-                <div id="gradereg">
-                    <!--<a id="grade">Grade:</a>-->
+                <div class="grade">
                     <label for="grade" class="fixedwidth">Grade:</label>
                     <a id="gra"><input type="radio" name="grade" value="pre_school"> Pre-School</a>
                     <a id="gra"><input type="radio" name="grade" value="1st"> 1st</a>
@@ -97,39 +88,28 @@
                     <a id="gra"><input type="radio" name="grade" value="5th"> 5th</a>
                 </div>
 
-                <div id="pagu">
-                    <a id="parent">
-                        Parent/Guardian:
-                        <!--*<label for="parentgardian" class="fixedwidth">Parent or Guardian:</label>-->
-                        <input type="text" name="parent_or_guardian" value="user_input">
-                    </a>
+                <div class="pagu">
+                    <label for="pagu" class="fixedwidth">Parent or Guardian:</label>
+                    <input type="text" name="parent_or_guardian" value="Parent or Guardian name" size="35" id="pagu">
                 </div>
-                <div id="contact">
-                    <label for="phonereg">Contact Phone:</label>
-                        
-                        <!--*<label for="contactphone" class="fixedwidth">Contact Phone:</label>-->
-                        <input type="text" name="contact_phone" value="user_input" id="phonereg"> <!--could be empty-->
-                    
-                    <a id="emailreg">
-                        Contact E-mail:
-                        <!--*<label for="contactmail" class="fixedwidth">Contact E-mail:</label>-->
-                        <!--<input type="text" name="contact_email" value="user_input">-->
-                        <input type="email" name="email" required placeholder="Enter a valid address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-                        <!--/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/-->
-                    </a>
-                </div>
-            </div><br>
 
-            <div id="sctitle">
-                <a id="sctitle">Which elementary schools do you live near?</a>
+                <div class="doublecolreg">
+                    <div class="regleft">
+                        <label for="phone" class="fixedwidth">Contact Phone:</label>
+                        <input type="text" name="contact_phone" value="phone number" size="12" id="phone">
+                    </div>
+                    <div class="regright">
+                        <label for="email" class="fixedwidth">Contact E-mail:</label>
+                        <input type="email" name="email" required placeholder="Enter a valid address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" size="35" id="email">
+                    </div>
+                </div>
             </div>
+            <br>
 
-            <div id="schools">
-                <div id="school1">
-                    <a id="closestsch">First Closest School:</a>
-                </div>
-                <div id="cs1">
-                    <!--<label for="school1" class="fixedwidth">First Closest School:</label>-->
+            <a class="title1">Which elementary schools do you live near?</a>
+            <div class="schools">
+                <div class="regleft">
+                    <a class="title2"> First Closest School:</a>
                     <select name="closest_school_1">
                         <option value="AJ Katzenmaier">AJ Katzenmaier</option>
                         <option value="Greenbay">Greenbay</option>
@@ -140,11 +120,8 @@
                     </select>
                 </div>
 
-                <div id="school2">
-                    <a id="closestsch">Second Closest School:</a>
-                </div>
-                <div id="cs2">
-                    <!--<label for="school2" class="fixedwidth">Second Closest School:</label>-->
+                <div class="regright">
+                    <a class="title2"> Second Closest School:</a>
                     <select name="closest_school_2">
                         <option value="AJ Katzenmaier">AJ Katzenmaier</option>
                         <option value="Greenbay">Greenbay</option>
@@ -156,87 +133,102 @@
                 </div>
             </div><br>
 
-            <div id="positions">
-                <div id="postitle1">
-                    <a id="postitle">What position(s) do you normally play? (Check all that apply)</a>
+            <div class="postitle1">
+                <a class="title1"> What position(s) do you normally play?
+                </a>
+                <a class="title2"> (Check all that apply)
+                </a>
+            </div>
+            <div class="positions1">
+                <div class="itemsleft">
+                    <a><input type="checkbox" name="plays_as" value="forward"> Forward</a>
+                    <a><input type="checkbox" name="plays_as" value="defense"> Defense</a>
                 </div>
-                <div id="positions1">
-                    <div id="posleft">
-                        <a id="pos"><input type="checkbox" name="plays_as" value="forward"> Forward</a>
-                        <a id="pos"><input type="checkbox" name="plays_as" value="defense"> Defense</a>
+                <div class="itemsright">
+                    <a><input type="checkbox" name="plays_as" value="midfield"> Midfield</a>
+                    <a><input type="checkbox" name="plays_as" value="goalkeeper"> Goalkeeper</a>
+                </div>
+            </div>
+
+            <div class="postitle2">
+                <a class="title1"> What position(s) do you want to play?
+                </a>
+                <a class="title2"> (Check all that apply)
+                </a>
+            </div>
+            <div class="positions2">
+                <div class="itemsleft">
+                    <a><input type="checkbox" name="wanna_play_as" value="forward"> Forward</a>
+                    <a><input type="checkbox" name="wanna_play_as" value="defense"> Defense</a>
+                </div>
+                <div class="itemsright">
+                    <a><input type="checkbox" name="wanna_play_as" value="midfield"> Midfield</a>
+                    <a><input type="checkbox" name="wanna_play_as" value="goalkeeper"> Goalkeeper</a>
+                </div>
+            </div>
+            <br>
+
+            <div class="title1">
+                <input type="checkbox" name="has_an_uniform" value="yes">
+                <a id="uniform">Already Has an uniform
+                </a>
+            </div>
+
+            <div class="jssz">
+                <a class="title1">Jersey Size:</a>
+                <a class="title1">Shorts Size:</a>
+            </div>
+
+            <div class="clothing">
+                <div class="jersey">
+                    <div class="itemsleft">
+                        <a><input type="checkbox" name="jersey_size" value="yS"> Youth Small</a>
+                        <a><input type="checkbox" name="jersey_size" value="yM"> Youth Medium</a>
+                        <a><input type="checkbox" name="jersey_size" value="yL"> Youth Large</a>
+                        <a><input type="checkbox" name="jersey_size" value="S"> Small</a>
                     </div>
-                    <div id="posright">
-                        <a id="pos"><input type="checkbox" name="plays_as" value="midfield"> Midfield</a>
-                        <a id="pos"><input type="checkbox" name="plays_as" value="goalkeeper"> Goalkeeper</a>
+                    <div class="itemsright">
+                        <a><input type="checkbox" name="jersey_size" value="M"> Medium</a>
+                        <a><input type="checkbox" name="jersey_size" value="L"> Large</a>
+                        <a><input type="checkbox" name="jersey_size" value="XL"> Extra-Large</a>
                     </div>
                 </div>
 
-                <div id="postitle2">
-                    <a id="postitle">What position(s) do you want to play? (Check all that apply)</a>
-                </div>
-                <div id="positions2">
-                    <div id="posleft">
-                        <a id="pos"><input type="checkbox" name="plays_as" value="forward"> Forward</a>
-                        <a id="pos"><input type="checkbox" name="plays_as" value="defense"> Defense</a>
+                <div class="shorts">
+                    <div class="itemsleft">
+                        <a><input type="checkbox" name="shorts_size" value="yS"> Youth Small</a>
+                        <a><input type="checkbox" name="shorts_size" value="yM"> Youth Medium</a>
+                        <a><input type="checkbox" name="shorts_size" value="yL"> Youth Large</a>
+                        <a><input type="checkbox" name="shorts_size" value="S"> Small</a>
                     </div>
-                    <div id="posright">
-                        <a id="pos"><input type="checkbox" name="plays_as" value="midfield"> Midfield</a>
-                        <a id="pos"><input type="checkbox" name="plays_as" value="goalkeeper"> Goalkeeper</a>
+                    <div class="itemsright">
+                        <a><input type="checkbox" name="shorts_size" value="M"> Medium</a>
+                        <a><input type="checkbox" name="shorts_size" value="L"> Large</a>
+                        <a><input type="checkbox" name="shorts_size" value="XL"> Extra-Large</a>
                     </div>
                 </div>
             </div><br>
 
-            <div id="uniform">
-                <input type="radio" name="has_an_uniform" value="yes"> <a id="uniform">Already have an uniform</a>
-            </div>
-
-            <div id="jssz">
-                <a id="jerseysize">Jersey Size:</a>
-                <a id="shortssize">Shorts Size:</a>
-            </div>
-
-            <div id="clothing">
-                <!--<a id="jerseysize">Jersey Size:</a>-->
-                <!--<label for="jerseysz" class="fixedwidth">Jersey Size:</label>-->
-                <div id="jersey">
-                    <div id="sizeleft">
-                        <a id="sz"><input type="radio" name="jersey_size" value="yS"> Youth Small</a>
-                        <a id="sz"><input type="radio" name="jersey_size" value="yM"> Youth Medium</a>
-                        <a id="sz"><input type="radio" name="jersey_size" value="yL"> Youth Large</a>
-                        <a id="sz"><input type="radio" name="jersey_size" value="S"> Small</a>
-                    </div>
-                    <div id="sizeright">
-                        <a id="sz"><input type="radio" name="jersey_size" value="M"> Medium</a>
-                        <a id="sz"><input type="radio" name="jersey_size" value="L"> Large</a>
-                        <a id="sz"><input type="radio" name="jersey_size" value="XL"> Extra-Large</a>
-                    </div>
+            <div class="permission">
+                <div class="title3">
+                    <a>Permission to Play</a><br>
                 </div>
-
-                <div id="shorts">
-                    <!--<a id="shortssize">Shorts Size:</a>-->
-                    <div id="sizeleft">
-                        <!--<label for="shortssz" class="fixedwidth">Shorts Size:</label>-->
-                        <a id="sz"><input type="radio" name="shorts_size" value="yS"> Youth Small</a>
-                        <a id="sz"><input type="radio" name="shorts_size" value="yM"> Youth Medium</a>
-                        <a id="sz"><input type="radio" name="shorts_size" value="yL"> Youth Large</a>
-                        <a id="sz"><input type="radio" name="shorts_size" value="S"> Small</a>
-                    </div>
-                    <div id="sizeright">
-                        <a id="sz"><input type="radio" name="shorts_size" value="M"> Medium</a>
-                        <a id="sz"><input type="radio" name="shorts_size" value="L"> Large</a>
-                        <a id="sz"><input type="radio" name="shorts_size" value="XL"> Extra-Large</a>
-                    </div>
-                </div>
-            </div><br>
-
-            <div id="permreg">
-                <a id="titperm">Permission to Play</a><br>
                 <br>
-                <a id="textperm">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.<br>
-                    <br>By signing below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.</a><br>
-                <br><a id="sign"> Parent/Guardian Name: <input type="text" name="namedigsignreg" value="user_input"> Date: <input type="text" name="datedigsignreg" value="user_input"> </a><br>
+                <a class="smalltext">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.<br>
+                    <br>
+                    By signing below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.</a>
             </div><br>
-            <div id="sendreg">
+            <br>
+            <div class="doublecolreg">
+                <a class="smalltext"><label for="sign" class="fixedwidth"> Parent/Guardian Signature: </label>
+                </a>
+                <input type="text" name="sign" value="enter your full name here" size="35" id="sign">
+                <a class="smalltext"><label for="datereg" class="fixedwidth"> Date: </label></a>
+                <input type="text" name="datereg" value="mm/dd/yyyy" size="10" id="datereg">
+            </div>
+            <br>
+            <br>
+            <div class="sendreg">
                 <input type="submit">
             </div><br>
             <br>
@@ -250,6 +242,4 @@
         </section>
     </form>
 
-</body>
-
-</html>
+</body></html>
